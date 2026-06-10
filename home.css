@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    padding: 12px 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #6a8c2f;
+    letter-spacing: -1px;
+}
+
+.nav-logo {
+    height: 45px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn-text {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+}
+
+.btn-primary {
+    text-decoration: none;
+    background-color: #6a8c2f;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover {
+    background-color: #557026;
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.btn-main {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.feature-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    border-color: #6a8c2f;
+    box-shadow: 0 10px 30px rgba(106, 140, 47, 0.1);
+}
+
+.feature-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #777;
+    line-height: 1.6;
+}

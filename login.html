@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+   <link rel="stylesheet" href="login.css">
+   <script src="login.js"></script>
+</head>
+<body>
+    <div class="rectangle">
+        <a href="home.html" class="back-home">
+        <span>חזרה לבית</span>
+        🏠
+    </a>
+    <div class="login">
+     <h1> ברוך הבא לאתר שלנו</h1> 
+     <p>יש להזין שם משתמש וסיסמה</p>
+     <input  id="user"type="text" placeholder="שם משתמש">
+     <input  id="password"type="password" placeholder="סיסמה">
+     <p  id="error-message"></p>
+     <button onclick="login()">התחבר</button>
+     <button>שכחתי סיסמה</button>
+    </div>
+    <div class="new-user">
+        <h1>משתמש חדש?</h1>
+     <button onclick="window.location.href='signup.html'">הירשם</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+   margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6a8c2f;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;
+    direction: rtl; 
+
+
+}
+.rectangle {
+    background-color: white;
+    position: relative;
+    padding: 40px;
+    border-radius: 15px;    /* פינות מעוגלות */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* צל שנותן עומק */
+    width: 100%;
+    max-width: 400px;       /* רוחב המלבן */
+    text-align: center;
+}
+.login {
+    display: flex;
+    flex-direction: column; /* מסדר הכל בטור */
+    align-items: stretch;   /* גורם לשדות להימתח לכל הרוחב */
+    gap: 15px;             /* רווח שווה בין כל פריט */
+}
+
+/* מוודא שהשדות והכפתור יתפסו את כל רוחב המלבן */
+.login input, .login button {
+    width: 100%;
+    box-sizing: border-box; /* חשוב כדי שה-padding לא יחרוג מהרוחב */
+}
+.back-home {
+    position: absolute;
+    top: 15px;         /* מרחק מהלמעלה */
+    right: 20px;       /* מרחק מימין */
+    text-decoration: none;
+    font-size: 14px;
+    color: #6a8c2f;    /* צבע שתואם לאתר שלך */
+    display: flex;
+    align-items: center;
+    gap: 5px;          /* רווח בין האייקון לטקסט */
+    font-weight: bold;
+    transition: 0.3s;
+}
+.new-user {
+    display: flex;
+    flex-direction: column; /* גורם להם להיות אחד מעל השני */
+    gap: 15px;             /* רווח בין השדות והכפתורים */
+}
+
+.new-user {
+    margin-top: 30px;      /* רווח מעל החלק של "משתמש חדש" */
+    border-top: 1px solid #eee; /* קו עדין מפריד */
+    padding-top: 20px;
+}
+/* עיצוב בסיסי לכפתורים ושדות */
+input, button {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #6a8c2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #557026;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+#error-message {
+    color: #ff4d4d;          /* אדום בהיר ומודרני */
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;     /* רווח מעל הכפתור */
+    text-align: center;
+    min-height: 20px;        /* שומר מקום גם כשאין טקסט כדי שהכפתורים לא יקפצו */
+    transition: all 0.3s;
+}
+
+/* האנימציה של ההבהוב */
+@keyframes blink-red {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.error-blink {
+    animation: blink-red 0.4s ease-in-out 2; /* מהבהב פעמיים */
+}
