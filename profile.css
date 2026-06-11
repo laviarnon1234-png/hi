@@ -1,0 +1,61 @@
+
+body {
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.item-card {
+    background: #f9f9f9;
+    border-right: 5px solid #007bff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.item-card h3 {
+    margin: 0 0 5px 0;
+    color: #007bff;
+}
+
+.item-card .price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.item-card .desc {
+    color: #666;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.nav-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הוספת חפץ חדש למכירה</title>
+    <link rel="stylesheet" href="add-item.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>פרסום חפץ חדש למכירה פומבית</h2>
+        <p class="subtitle">מלא את פרטי החפץ כדי לפרסם אותו לכולם</p>
+        
+        <form id="addItemForm">
+            
+            <div class="form-group">
+                <label for="title">שם החפץ / המוצר:</label>
+                <input type="text" id="title" required placeholder="לדוגמה: שעון יד מוזהב קלאסי">
+            </div>
+
+            <div class="form-group">
+                <label for="price">מחיר פתיחה (בשקלים):</label>
+                <input type="number" id="price" required placeholder="לדוגמה: 150">
+            </div>
+
+            <div class="form-group">
+                <label for="description">תיאור החפץ:</label>
+                <textarea id="description" rows="4" placeholder="ספר קצת על החפץ, מצבו, היסטוריה וכו'..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">פרסם חפץ בלוח</button>
+        </form>
+
+        <div class="nav-links">
+            <a href="profile.html">← ביטול וחזרה לדף המוצרים</a> | 
+            <a href="home2.html">דף הבית</a>
+        </div>
+    </div>
+
+    <script src="add-item.js"></script>
+</body>
+</html>
